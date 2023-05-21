@@ -2,25 +2,25 @@ version: '3'
 services:
   addition:
     build:
-      context: ./addition_service
+      context: addition_service_old
       dockerfile: Dockerfile
     ports:
       - "3001:3001"
   subtraction:
     build:
-      context: ./subtraction_service
+      context: subtraction_service_old
       dockerfile: Dockerfile
     ports:
       - "3002:3002"
   multiplication:
     build:
-      context: ./multiplication_service
+      context: multiplication_service_old
       dockerfile: Dockerfile
     ports:
       - "3003:3003"
   division:
     build:
-      context: ./division_service
+      context: division_service_old
       dockerfile: Dockerfile
     ports:
       - "3004:3004"
